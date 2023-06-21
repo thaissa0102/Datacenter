@@ -1,18 +1,30 @@
                                                             Pesquise, teste e explique os seguintes comandos git:  
 
-git init : Inicializa um repositório Git em um diretório. Isso cria um novo repositório Git vazio ou reinicializa um repositório existente. 
+Git init : Cria um novo repositório Git vazio ou reinicializa um repositório existente, basicamente um diretório .git com subdiretórios para os arquivos objects, refs/heads, refs/tags e arquivos modelo. 
+Também é criado um arquivo inicial HEAD que tem como referencia o HEAD do ramo principal.
+                        Comando: git init            
+  
 
-git config:  Permite configurar as opções do Git. Pode ser usado para definir configurações como nome de usuário, endereço de e-mail, preferências de formatação etc.  
+Git config:  Permite configurar as opções do Git. Pode ser usado para definir configurações como nome de usuário, endereço de e-mail, preferências de formatação etc.  
+                      Comando: git config --global -e
 
-git status:  Mostra o estado atual do repositório. Ele exibe informações sobre quais arquivos foram modificados, quais estão aguardando commit, entre outros.
+Git status:  Mostra o estado atual do repositório. Ele exibe informações sobre quais arquivos foram modificados, quais estão aguardando commit, entre outros.
+                      Comando: git status
 
-git add: Adiciona arquivos ao índice (também conhecido como área de preparação). É usado para selecionar quais arquivos serão incluídos no próximo commit. 
+Git add: Adiciona arquivos ao índice (também conhecido como área de preparação). É usado para selecionar quais arquivos serão incluídos no próximo commit. 
+                      Comando:  git add [nome do arquivo] 
 
-git commit: Cria um novo commit contendo as alterações que foram adicionadas ao índice. É necessário fornecer uma mensagem de commit que descreva as alterações realizadas. 
+Git commit: Cria um novo commit contendo as alterações que foram adicionadas ao índice. É necessário fornecer uma mensagem de commit que descreva as alterações realizadas. 
+                      Comando: git commit -m “[Mensagem Descritiva]”
 
 git Branch :  Lista, cria ou exclui branches (ramificações) no repositório. Um branch é usado para desenvolver recursos ou solucionar problemas isoladamente do branch principal (geralmente chamado de "master" ou "main").
+                      Comando:git branch <nome-da-branch> (Para criar uma nova branch local)
+                              git push -u <remote> <nome-da-branch> (Para fazer upload uma nova branch para o repositório remoto)
+                              git branch (Para ver as ramificações)
+                              git branch -d <nome-da-branch> (delete uma branch) 
 
-git checkout: Altera a branch atual ou restaura arquivos do commit. Pode ser usado para criar uma nova branch, alternar entre branches existentes ou restaurar arquivos para um estado anterior.  
+git checkout: Altera a branch atual ou restaura arquivos do commit. Pode ser usado para criar uma nova branch, alternar entre branches existentes ou restaurar arquivos para um estado anterior. 
+                    Comando:git checkout <nome-da-ramificação>
 
 git merge: Combina as alterações de uma branch com outra. O comando merge permite incorporar as alterações feitas em uma branch na branch atual. 
 
