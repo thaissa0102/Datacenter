@@ -1,16 +1,31 @@
- Pesquise, teste e explique os seguintes comandos git:  
+                                                            Pesquise, teste e explique os seguintes comandos git:  
+
 git init : Inicializa um repositório Git em um diretório. Isso cria um novo repositório Git vazio ou reinicializa um repositório existente. 
+
 git config:  Permite configurar as opções do Git. Pode ser usado para definir configurações como nome de usuário, endereço de e-mail, preferências de formatação etc.  
+
 git status:  Mostra o estado atual do repositório. Ele exibe informações sobre quais arquivos foram modificados, quais estão aguardando commit, entre outros.
+
 git add: Adiciona arquivos ao índice (também conhecido como área de preparação). É usado para selecionar quais arquivos serão incluídos no próximo commit. 
- git commit: Cria um novo commit contendo as alterações que foram adicionadas ao índice. É necessário fornecer uma mensagem de commit que descreva as alterações realizadas. 
+
+git commit: Cria um novo commit contendo as alterações que foram adicionadas ao índice. É necessário fornecer uma mensagem de commit que descreva as alterações realizadas. 
+
 git Branch :  Lista, cria ou exclui branches (ramificações) no repositório. Um branch é usado para desenvolver recursos ou solucionar problemas isoladamente do branch principal (geralmente chamado de "master" ou "main").
+
 git checkout: Altera a branch atual ou restaura arquivos do commit. Pode ser usado para criar uma nova branch, alternar entre branches existentes ou restaurar arquivos para um estado anterior.  
+
 git merge: Combina as alterações de uma branch com outra. O comando merge permite incorporar as alterações feitas em uma branch na branch atual. 
- git remote:  Gerencia conexões com repositórios remotos. Ele permite adicionar, remover ou visualizar repositórios remotos vinculados ao repositório local.
- git push : Envia as alterações locais para um repositório remoto. É usado para atualizar o repositório remoto com os commits feitos localmente.
- git pull:  Obtém as alterações mais recentes de um repositório remoto e mescla com o branch atual. É usado para atualizar o repositório local com as alterações feitas remotamente. 
+
+git remote:  Gerencia conexões com repositórios remotos. Ele permite adicionar, remover ou visualizar repositórios remotos vinculados ao repositório local.
+
+git push : Envia as alterações locais para um repositório remoto. É usado para atualizar o repositório remoto com os commits feitos localmente.
+
+git pull:  Obtém as alterações mais recentes de um repositório remoto e mescla com o branch atual. É usado para atualizar o repositório local com as alterações feitas remotamente. 
+
 git clone:  Cria uma cópia de um repositório remoto em um novo diretório local. É usado para iniciar um novo projeto com base em um repositório existente.
+
 git reset: Desfaz alterações selecionadas, removendo commits ou redefinindo o estado atual para um commit específico. 
+
 git log: Mostra o histórico de commits do repositório. Exibe informações como o autor do commit, data, mensagem do commit e um identificador único (hash) para cada commit.
+
 git diff:  Mostra as diferenças entre commits, entre o índice e o diretório de trabalho, ou entre branches. Ele exibe as linhas adicionadas ou removidas nos arquivos.
