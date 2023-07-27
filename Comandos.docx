@@ -27,17 +27,37 @@ git checkout: Altera a branch atual ou restaura arquivos do commit. Pode ser usa
                     Comando:git checkout <nome-da-ramificação>
 
 git merge: Combina as alterações de uma branch com outra. O comando merge permite incorporar as alterações feitas em uma branch na branch atual. 
+                    Comando:git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]
+	                [--no-verify] [-s <estratégia>] [-X <opção-da-estratégia>] [-S[<keyid>]]
+	                [--[no-]allow-unrelated-histories]
+	                [--[no-]rerere-autoupdate] [-m <msg>] [-F <arquivo>] [<commit>…​]
+                            git merge (--continue | --abort | --quit)
 
 git remote:  Gerencia conexões com repositórios remotos. Ele permite adicionar, remover ou visualizar repositórios remotos vinculados ao repositório local.
+                     Comando: git remote (Listar as conexões remotas que tem com outros repositórios);
+                              git remote -v (Igual ao comando acima, mas inclui a URL de cada conexão).
+                              git remote add <name> <url>
+                              git remote rm <name>
+                              git remote rename <old-name> <new-name>
 
 git push : Envia as alterações locais para um repositório remoto. É usado para atualizar o repositório remoto com os commits feitos localmente.
+                     Comando: git push
 
 git pull:  Obtém as alterações mais recentes de um repositório remoto e mescla com o branch atual. É usado para atualizar o repositório local com as alterações feitas remotamente. 
+                     Comando: git pull
 
 git clone:  Cria uma cópia de um repositório remoto em um novo diretório local. É usado para iniciar um novo projeto com base em um repositório existente.
+                     Comando: git clone <url do repositório>
 
 git reset: Desfaz alterações selecionadas, removendo commits ou redefinindo o estado atual para um commit específico. 
+                     Comando: git reset [-q] [<tree-ish>] [--] <pathspec>…​
+                              git reset [-q] [--pathspec-from-file=<arquivo> [--pathspec-file-nul]] [<tree-ish>]
+                              git reset (--patch | -p) [<tree-ish>] [--] [<pathspec>…​]
+                              git reset [--soft | --mixed [-N] | --hard | --merge | --keep] [-q] [<commit>]
 
 git log: Mostra o histórico de commits do repositório. Exibe informações como o autor do commit, data, mensagem do commit e um identificador único (hash) para cada commit.
-
+                     Comando: git log (Mostra todo o histórico de commits usando a formatação padrão)
 git diff:  Mostra as diferenças entre commits, entre o índice e o diretório de trabalho, ou entre branches. Ele exibe as linhas adicionadas ou removidas nos arquivos.
+                     Comando: git diff (Exibe todas as diferenças entre sua cópia local e o índice sincronizado);
+                              git diff –cached  (Exibe todas as diferenças entre o índice sincronizado e o último commit);
+                              git diff HEAD (Exibe todas as diferenças entre sua cópia local e o último commit realizado).
