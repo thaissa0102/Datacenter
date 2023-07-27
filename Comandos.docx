@@ -57,6 +57,7 @@ git reset: Desfaz alterações selecionadas, removendo commits ou redefinindo o 
 
 git log: Mostra o histórico de commits do repositório. Exibe informações como o autor do commit, data, mensagem do commit e um identificador único (hash) para cada commit.
                      Comando: git log (Mostra todo o histórico de commits usando a formatação padrão)
+                     
 git diff:  Mostra as diferenças entre commits, entre o índice e o diretório de trabalho, ou entre branches. Ele exibe as linhas adicionadas ou removidas nos arquivos.
                      Comando: git diff (Exibe todas as diferenças entre sua cópia local e o índice sincronizado);
                               git diff –cached  (Exibe todas as diferenças entre o índice sincronizado e o último commit);
